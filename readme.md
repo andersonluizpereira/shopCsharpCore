@@ -18,6 +18,13 @@ https://localhost:5001/swagger/v1/swagger.json
 #Initialize system, of seed system
 https://localhost:5001/v1
 
+#Docker build
+docker build . -t shop
+#Docker Run
+docker run --name shop1 -p 9090:80 shop
+
+docker push acpereira/shop:tagname
+
 
 #History
 9448  dotnet sln add PaymentContext.Domain/PaymentContext.Domain.csproj
